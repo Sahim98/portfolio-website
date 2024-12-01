@@ -19,7 +19,7 @@ export default function Hero() {
           Hi, I'm Sahim Salem
         </h1>
         <p className="text-lg md:text-xl text-slate-600 mb-8">
-          Full Stack Developer & Software Engineer
+          Aspiring Software Engineer
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <a
