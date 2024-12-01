@@ -12,7 +12,7 @@ export const projects = [
       "Like/dislike functionality"
     ],
     links: {
-      github: "GitHub Link"
+      github: "https://github.com/Sahim98/FaceEmotion"
     }
   },
   {
@@ -27,7 +27,7 @@ export const projects = [
       "Location-based hospital and police station finder"
     ],
     links: {
-      github: "GitHub Link"
+      github: "https://github.com/Sahim98/Flutter-Project"
     }
   },
   {
@@ -42,8 +42,8 @@ export const projects = [
       "Unique username verification"
     ],
     links: {
-      github: "GitHub Link",
-      website: "Website"
+      github: "https://github.com/Sahim98/news-caster-next",
+      website: "https://news-caster-next.vercel.app/"
     }
   }
 ];
