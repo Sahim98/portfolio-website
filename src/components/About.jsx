@@ -11,13 +11,13 @@ export default function About() {
         <div className="grid grid-cols-1 gap-12">
           <div>
             <p className="text-slate-600 mb-4">
-              I'm a passionate software engineer with expertise in building modern web applications.
-              My focus is on creating efficient, scalable, and user-friendly solutions.
+            I'm a computer science graduate with a strong background in competitive 
+            programming, achieving notable ranks in Codeforces (pupil) and CodeChef (2*).
+             Besides, I've development experience both in mobile (flutter+firebase) and 
+             web(react+MongoDB) applications. In addition, I have research experience 
+             in the NLP domain.
             </p>
-            <p className="text-slate-600">
-              When I'm not coding, you can find me exploring new technologies, contributing to open-source
-              projects, and sharing knowledge with the developer community.
-            </p>
+          
           </div>
           <div className="space-y-6">
             <h3 className="text-xl font-bold text-slate-900">Technical Skills</h3>
