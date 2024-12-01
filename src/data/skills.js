@@ -1,26 +1,23 @@
 export const skills = {
   expert: [
-    'C',
-    'C++',
-    'HTML',
-    'CSS',
-    'Git',
-    'MySQL',
-    'OOP'
+    { name: 'C', icon: 'c-plain' },
+    { name: 'C++', icon: 'cplusplus-plain' },
+    { name: 'HTML', icon: 'html5-plain' },
+    { name: 'CSS', icon: 'css3-plain' },
+    { name: 'Git', icon: 'git-plain' },
+    { name: 'MySQL', icon: 'mysql-plain' }
   ],
   intermediate: [
-    'Python',
-    'Pytorch',
-    'React',
-    'JavaScript',
-    'Java',
-    'Flutter',
-    'Firebase'
+    { name: 'Python', icon: 'python-plain' },
+    { name: 'React', icon: 'react-original' },
+    { name: 'JavaScript', icon: 'javascript-plain' },
+    { name: 'Java', icon: 'java-plain' },
+    { name: 'Flutter', icon: 'flutter-plain' },
+    { name: 'Firebase', icon: 'firebase-plain' }
   ],
   beginner: [
-    'MongoDB',
-    'Node.js',
-    'Flask',
-    'Express.js'
+    { name: 'MongoDB', icon: 'mongodb-plain' },
+    { name: 'Node.js', icon: 'nodejs-plain' },
+    { name: 'Express.js', icon: 'express-original' }
   ]
 };

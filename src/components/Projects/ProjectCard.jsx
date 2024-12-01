@@ -3,7 +3,7 @@ import { FaGithub, FaGlobe } from 'react-icons/fa';
 
 export default function ProjectCard({ project }) {
   return (
-    <div className="bg-white rounded-lg shadow-lg border border-slate-100 overflow-hidden hover:shadow-xl transition-shadow">
+    <div className="bg-white rounded-xl shadow-xl border border-slate-100 overflow-hidden hover:shadow-2xl transition-shadow">
       <div className="p-6">
         <div className="flex justify-between items-start mb-4">
           <h3 className="text-xl font-semibold text-slate-900">{project.title}</h3>
@@ -28,7 +28,7 @@ export default function ProjectCard({ project }) {
         <div className="mb-4">
           <div className="flex flex-wrap gap-2">
             {project.technologies.map((tech) => (
-              <span key={tech} className="bg-blue-50 text-blue-700 px-2 py-1 rounded-md text-sm">
+              <span key={tech} className="bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-sm font-medium">
                 {tech}
               </span>
             ))}
