@@ -19,7 +19,7 @@ export default function Hero() {
       <div className="max-w-5xl mx-auto py-20 text-center">
         <div className="mb-8">
           <img
-            src="/file.png"
+            src="/sahim_casual.JPG"
             alt="Sahim Salem"
             className="w-44 h-44 rounded-full mx-auto border-3 border-white 
               shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300
