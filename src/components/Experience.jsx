@@ -28,13 +28,31 @@ const platformConfig = {
 
 function CompetitionCard({ competition }) {
   return (
-    <div className="bg-white p-6 rounded-lg shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
-      <h4 className="font-semibold text-lg text-slate-900 mb-2">{competition.title}</h4>
-      <div className="space-y-1">
-        <p className="text-blue-600 font-medium">{competition.achievement}</p>
-        {competition.team && (
-          <p className="text-slate-600 text-sm">Team: {competition.team}</p>
-        )}
+    <div className="bg-gradient-to-br from-white to-slate-50 p-6 rounded-lg shadow-md 
+      border border-slate-200/60 hover:shadow-2xl hover:shadow-blue-200/40 
+      hover:border-blue-300/60 transition-all duration-300 hover:-translate-y-1 
+      backdrop-blur-sm relative group">
+      <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-blue-400/0 
+        via-blue-400/0 to-blue-400/0 group-hover:from-blue-100/10 
+        group-hover:via-blue-200/10 group-hover:to-blue-300/10 transition-all duration-300"/>
+      <div className="flex flex-col h-full relative">
+        <h4 className="font-semibold text-lg bg-gradient-to-r from-slate-900 to-blue-900 
+          bg-clip-text text-transparent mb-3">{competition.title}</h4>
+        <div className="space-y-2">
+          <div className="flex items-center space-x-2">
+            <span className="inline-block w-2 h-2 rounded-full bg-gradient-to-r 
+              from-blue-400 to-cyan-400 shadow-sm shadow-blue-200"></span>
+            <p className="text-transparent bg-clip-text bg-gradient-to-r 
+              from-blue-600 to-cyan-600 font-medium">{competition.achievement}</p>
+          </div>
+          {competition.team && (
+            <div className="flex items-center space-x-2">
+              <span className="inline-block w-2 h-2 rounded-full 
+                bg-gradient-to-r from-slate-400 to-slate-500"></span>
+              <p className="text-slate-600 text-sm">Team: {competition.team}</p>
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );
