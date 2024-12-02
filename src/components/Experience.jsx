@@ -1,5 +1,30 @@
 import React from 'react';
 import { competitions, codingStats } from '../data/achievements';
+import { SiLeetcode, SiCodeforces, SiCodechef } from 'react-icons/si';
+
+const platformConfig = {
+  LeetCode: {
+    icon: SiLeetcode,
+    bgColor: 'bg-[#282828]',
+    hoverBg: 'hover:bg-[#1a1a1a]',
+    textColor: 'text-[#FFA116]',
+    borderColor: 'border-[#FFA116]'
+  },
+  Codeforces: {
+    icon: SiCodeforces,
+    bgColor: 'bg-[#1f223d]',
+    hoverBg: 'hover:bg-[#181b30]',
+    textColor: 'text-[#318CE7]',
+    borderColor: 'border-[#318CE7]'
+  },
+  CodeChef: {
+    icon: SiCodechef,
+    bgColor: 'bg-[#2d2d2d]',
+    hoverBg: 'hover:bg-[#222222]',
+    textColor: 'text-[#964B00]',
+    borderColor: 'border-[#964B00]'
+  }
+};
 
 function CompetitionCard({ competition }) {
   return (
@@ -33,13 +58,27 @@ function CodingStats() {
 
       <div>
         <h4 className="font-semibold text-slate-900 mb-2">Platform Ratings</h4>
-        <div className="flex flex-wrap gap-3">
-          {codingStats.ratings.map(({ platform, rating }) => (
-            <div key={platform} className="bg-white px-4 py-2 rounded-md shadow-sm border border-slate-100">
-              <span className="text-slate-600">{platform}:</span>
-              <span className="ml-2 font-semibold text-blue-600">{rating}</span>
-            </div>
-          ))}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          {codingStats.ratings.map(({ platform, rating }) => {
+            const config = platformConfig[platform];
+            const Icon = config.icon;
+            
+            return (
+              <div
+                key={platform}
+                className={`${config.bgColor} ${config.hoverBg} p-4 rounded-lg shadow-lg border 
+                  ${config.borderColor} transition-all duration-300 hover:scale-105`}
+              >
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center space-x-3">
+                    <Icon className={`text-2xl ${config.textColor}`} />
+                    <span className="text-white font-medium">{platform}</span>
+                  </div>
+                  <span className={`font-bold ${config.textColor}`}>{rating}</span>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>
