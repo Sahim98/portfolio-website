@@ -1,6 +1,8 @@
 import React from 'react';
 import { FaDownload } from 'react-icons/fa';
 import { scrollToSection } from '../utils/navigation';
+// import profile from '../../public/profile.png';
+
 
 export default function Hero() {
   const handleDownload = () => {
@@ -15,6 +17,15 @@ export default function Hero() {
   return (
     <section id="hero" className="min-h-screen flex items-center justify-center bg-gradient-to-b from-blue-50 to-white px-4">
       <div className="max-w-5xl mx-auto py-20 text-center">
+        <div className="mb-8">
+          <img
+            src="/file.png"
+            alt="Sahim Salem"
+            className="w-44 h-44 rounded-full mx-auto border-3 border-white 
+              shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300
+              bg-gradient-to-b from-blue-100 to-white p-1"
+          />
+        </div>
         <h1 className="text-4xl md:text-5xl font-bold mb-6">
           Hi, I'm Sahim Salem
         </h1>
