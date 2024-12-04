@@ -11,7 +11,7 @@ export default function About() {
         <div className="grid grid-cols-1 gap-12">
           <div>
             <p className="text-slate-600 mb-4">
-            I am a recent computer science graduate with a strong foundation in competitive programming, having achieved commendable ranks on platforms such as Codeforces and CodeChef. My hands-on development experience includes creating mobile applications with Flutter and Firebase, as well as web applications using React and MongoDB. Additionally, I have conducted research in Natural Language Processing (NLP), which has deepened my passion for technology and innovation.
+            Motivated Computer Science and Engineering graduate with expertise in full-stack development, machine learning, and mobile application development. Proven track record in competitive programming and innovative tech solutions.
             </p>
           
           </div>
